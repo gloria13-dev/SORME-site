@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96dcb48df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>.STOR</span>ME</h1>
+        </div>
+        
+        <div class="toggle-menu"></div>
+
+        <ul class="menu">
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Serie</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:kpogoyayra0@gmail.com">Email</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="left">
+            <div class="search_box">
+                <img src="search.png" title="Faites votre recherche">
+                <input type="text">
+            </div>
+            <hr>
+            <h1>Cherchons l'argent pour mieux vivre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo, porro dolor placeat fugit possimus recusandae dignissimos accusantium vero error cumque neque et, ex hic provident, doloremque fugiat. Culpa, eligendi?</p>
+            <ul class="icons">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="img.png">
+        </div>
+    </section>
+<script>
+    let menu = document.querySelector(".menu");
+    let toggle_menu = document.querySelector(".toggle-menu");
+
+    toggle_menu.onclick = function(){
+        toggle_menu.classList.toggle("active");
+        menu.classList.toggle('responsive');
+    }
+</script>
+</body>
+</html>
